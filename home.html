@@ -11,43 +11,52 @@
     <header>
         <nav>
             <div class="topnav">
-                <ul>
-                    <li>
+                <div class="dropdown">
+                    <button class="button">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
                         <a href="home.html">Home</a>
-                    </li>
-                    <li>
                         <a href="about.html">About</a>
-                    </li>
-                    <li>
                         <a href="workstudy.html">History</a>
-                    </li>
-                    <li>
                         <a href="blogs.html">Blogs</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     
-    </div>
-    <h2>Ethan Neyland | Personal Profile</h2>
-    <img class="tim" id="tim" src="img/tim.jpeg" />
+    <h2 class="title">Ethan Neyland | Personal Profile</h2>
+    <img id="tim" src="img/tim.jpeg" />
     
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, est eveniet! Quam corporis facilis voluptates vero, quae id repellendus dicta cumque amet voluptas nisi praesentium similique enim placeat, accusantium dolorum.
-    </p> 
+     <article>
+        <h3>Welcome</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, est eveniet! Quam corporis facilis voluptates vero, quae id repellendus dicta cumque amet voluptas nisi praesentium similique enim placeat, accusantium dolorum.
+        </p>
+    </article>
+    <article>
+        <h3>Contact</h3>
+        <p>Phone:  +61 419 XXX XXX</p>
+        <p>Email:  ethanjneyland@loremipsum.com</p> 
+    </article>
 
     <section id="pages">
         <a href="home.html">
             <img id="home" src="img/home.jpg" />
+                <div class="pages">Home</div>
         </a>
         <a href="about.html">
             <img id="about" src="img/about.jpg" />
+                <div class="pages">About</div>
         </a>
         <a href="workstudy.html">
             <img id="history" src="img/history.jpg" />
+                <div class="pages">History</div>
         </a>
         <a href="blogs.html">
             <img id="blogs" src="img/blogs.jpg" />
+                <div class="pages">Blogs</div>
         </a>
     </section>
     
@@ -66,7 +75,7 @@
             </a>
     </section>
     
-    <p id="follow">You can follow me on the above platforms</p>
+    <p id="follow">You can find my profile on any of the above platforms by selecting the respective icon</p>
 
 </body>
 </html>

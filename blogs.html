@@ -11,6 +11,21 @@
     <header>
         <nav>
             <div class="topnav">
+                <div class="dropdown">
+                    <button class="button">Menu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="workstudy.html">History</a>
+                        <a href="blogs.html">Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav>
+            <div class="topnav">
                 <ul>
                     <li>
                         <a href="home.html">Home</a>
@@ -25,20 +40,84 @@
                         <a href="blogs.html">Blogs</a>
                     </li>
                 </ul>
-        </nav>
+        </nav> -->
     </header>
-    <h1>Blogs</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis qui nesciunt accusantium, mollitia, maiores asperiores quaerat voluptatem modi quos aperiam ipsam harum blanditiis perspiciatis consequatur est consectetur omnis labore unde!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem cum dicta vel placeat expedita soluta blanditiis error explicabo fuga accusantium unde, maxime praesentium esse! Autem commodi accusamus aliquam inventore eum.</p>
-    <di>
-        <ol>
-            <li>Blog a</li>
-            <li>Blog b</li>
-            <li>Blog c</li>
-            <li>Blog d</li>
-            <li>Blog e</li>
-        </ol>
-    </di>
+    <h2 class="title">Blogs</h2>
+
+<div class="blogs">
+    <button type="button" class="collapsible">Blog a >></button>
+    <div class="content">
+        <p>(02/03/22)</p>
+        <p><b>Title: Blog a</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maxime id dolore iure fugiat ad, laborum quis nulla perspiciatis reiciendis, magni necessitatibus nemo sed debitis ipsa impedit totam facere mollitia!</p>
+        <img id="blog" src="img/tractor.jpg">
+    </div>
+    <button type="button" class="collapsible">Blog b >></button>
+    <div class="content">
+        <p>(15/02/22)</p>
+        <p><b>Title: Blog b</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maxime id dolore iure fugiat ad, laborum quis nulla perspiciatis reiciendis, magni necessitatibus nemo sed debitis ipsa impedit totam facere mollitia!</p>
+        <img id="blog" src="img/ollie.jpg">
+    </div>
+    <button type="button" class="collapsible">Blog c >></button>
+    <div class="content">
+        <p>(27/11/21)</p>
+        <p><b>Title: Blog c</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maxime id dolore iure fugiat ad, laborum quis nulla perspiciatis reiciendis, magni necessitatibus nemo sed debitis ipsa impedit totam facere mollitia!</p>
+        <img id="blog" src="img/bike.jpg">
+    </div>
+    <button type="button" class="collapsible">Blog d >></button>
+    <div class="content">
+        <p>(17/09/21)</p>
+        <p><b>Title: Blog d</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maxime id dolore iure fugiat ad, laborum quis nulla perspiciatis reiciendis, magni necessitatibus nemo sed debitis ipsa impedit totam facere mollitia!</p>
+        <img id="blog" src="img/tree.jpg">
+    </div>
+    <button type="button" class="collapsible">Blog e >></button>
+    <div class="content">
+        <p>(09/08/21)</p>
+        <p><b>Title: Blog e</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam maxime id dolore iure fugiat ad, laborum quis nulla perspiciatis reiciendis, magni necessitatibus nemo sed debitis ipsa impedit totam facere mollitia!</p>
+        <img id="blog" src="img/fern.jpg">
+    </div>
+</div>
+    <script src="script.js"></script>
+
+<section id="pages">
+    <a href="home.html">
+        <img id="home" src="img/home.jpg" />
+                <div class="pages">Home</div>
+    </a>
+    <a href="about.html">
+         <img id="about" src="img/about.jpg" />
+            <div class="pages">About</div>
+    </a>
+    <a href="workstudy.html">
+        <img id="history" src="img/history.jpg" />
+            <div class="pages">History</div>
+    </a>
+    <a href="blogs.html">
+        <img id="blogs" src="img/blogs.jpg" />
+            <div class="pages">Blogs</div>
+    </a>
+</section>
+    
+    <section id="socials">
+            <a href="https://github.com/ejneyland" target="_blank">
+                <img id="git" src="img/git.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/ethan-neyland-28038a1a4/" target="_blank">
+                <img id="linked" src="img/linked.png" />
+            </a>
+            <a href="https://www.instagram.com/ejneyland/" target="_blank">
+                <img id="insta" src="img/insta.png" />
+            </a>
+            <a href="https://twitter.com/ejneyland" target="_blank">
+                <img id="twit" src="img/twit.png" />
+            </a>
+    </section>
+    
+    <p id="follow">You can find my profile on any of the above platforms by selecting the respective icon</p>
 
 </body>
 </html>

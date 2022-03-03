@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,24 +14,144 @@ body {
     background: #07090d;
 }
 
+.title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+li {
+    list-style-type: none;
+}
+
 .topnav {
-    text-align: center;
+    overflow: hidden;
+    background-color: beige;
+    text-align: left;
+    padding-right: 5%;
+    border-right: 5px solid beige;
+}
+
+.topnav a {
+    float: left;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .button {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: none;
+    padding: 0;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.topnav a:active, .dropdown:active .button {
+    background-color: lightsalmon;
+}
+    @media screen and (min-width: 1080px) {
+       .topnav a:hover, .dropdown:hover .button {
+    background-color: lightsalmon; 
+       }
+    }
+
+.dropdown-content {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: beige;
+    width: 25%; 
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
     color: beige;
+    display: block;
+    text-align: left;
+    padding-left: 5%;
 }
 
-h2 {
-    text-align: center;
+.dropdown-content a:active {
+    background-color: lightgreen;
+}
+    @media screen and (min-width: 1080px) {
+        .dropdown-content a:hover {
+            background-color: lightgreen;
+        }
+    }
+
+.dropdown:active .dropdown-content {
+    display: block;
+}
+    @media screen and (min-width: 1080px) {
+        .dropdown:hover .dropdown-content {
+    display: block;
+        }
+    }
+
+a:link {
+    color: beige;
+    text-decoration: none;
 }
 
-img.tim {
-    justify-content: center;
+li:hover {
+    font-size: 130%;
+}
+
+a:visited {
+    color: peru;
+}
+
+h2.title {
+    padding-left: 5%;
+}
+    @media screen and (min-width: 1080px) {
+        h2.title {
+        font-size: 2rem;
+        }
+    }
+
+h2, h3 {
+    text-align: left;
+    padding-left: 0%;
+    width: 80%;
+}
+
+img#tim {
+    display: block;
     width: 100%;
-    padding: 5% 0% 5% 0%;
+    height: auto;
+    padding-top: 0%;
+}
+    @media screen and (min-width: 1080px) {
+        img#tim {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-bottom: 1%;
+        }
+    }
+
+img#murph {
+    width: 100%;
+}
+
+img#corey {
+    width: 100%;
 }
 
 #socials {
     width: 100%;
-    padding: 5% 0% 5% 0%;
+    padding: 10% 0% 5% 0%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -49,11 +170,36 @@ img.tim {
     justify-content: center;
 }
 
-p {
+    @media screen and (min-width: 420px) {
+        #socials a {
+            width: 25%;
+        }    
+        #socials a img {
+            width: 50%;
+        }
+    }
+    @media  screen and (min-width: 1280px) {
+        #socials a img {
+            width: 30%;
+        }
+    }
+
+article {
     text-align: justify;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 5% 2% 5% 2%;
 }
+    @media screen and (min-width: 810px) {
+        article {
+            padding: 2%;
+            font-size: 1.2rem;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        article {
+            padding: 2% 5% 2% 5%;
+            font-size: 1.3rem;
+        }
+    }
 
 #follow {
     text-align: center;
@@ -61,22 +207,150 @@ p {
 
 #pages {
     width: 100%;
-    padding: 5% 0% 5% 0%;
+    padding: 0%;
+    padding-top: 2%;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #pages a {
+    /* position: relative;
+    text-align: center; */
     width: 50%;
     height: 100%;
+    margin: 0%;
     text-align: center;
 }
 
 #pages a img {
     width: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+    height: 40vw;
+}
+
+    @media  screen and (min-width: 1280px) {
+        #pages a {
+            width: 25%;
+        }
+        #pages a img {
+            height: 40vh;
+        }
+    }
+
+a:hover {
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+a {
+    position: relative;
+}
+
+.pages {
+    position: absolute;
+    bottom: 40%;
+    right: 40%;
+    color: white;
+}
+
+p#follow {
+    padding-bottom: 5%;
+}
+
+div.abt1 {
+    position: relative;
+}
+
+div.murph {
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    width: 50%;
+    padding: 2%;
+    background-color: black;
+    opacity: 50%;
+}
+    @media screen and (min-width: 650px) {
+        div.murph {
+            font-size: 1.5rem;
+            bottom: 50%;
+            right: 65%;
+            width: 35%;
+        }
+    }
+
+div.abt2 {
+    position: relative;
+}
+
+div.corey {
+    position: absolute;
+    height: 98%;
+    bottom: 0%;
+    right: 0%;
+    width: 50%;
+    padding: 2%;
+    background-color: black;
+    opacity: 50%;
+}
+    @media screen and (min-width: 650px) {
+            div.corey {
+                font-size: 1.5rem;
+                width: 100%;
+                height: 27%;
+            }
+        }
+
+ul#study, #work {
+    padding: 5%;
+}
+
+.collapsible {
+  background-color: beige;
+  color: #444;
+  cursor: pointer;
+  padding: 5%;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: beige;
+}
+
+.content {
+  padding: 5%;
+  display: none;
+  overflow: hidden;
+  background-color: beige;
+}
+
+div.content {
+    color: black;
+}
+
+.collapsible:after {
+  content: '\02795';
+  float: right;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+img#blog {
+    width: 100%;
+}
+
+section#workstudy {
+    width: 100%;
+    display: block;
 }
