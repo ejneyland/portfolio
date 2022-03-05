@@ -8,15 +8,20 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: beige;
-    /* margin-top: 5%;
-    margin-bottom: 5%; */
     background: #07090d;
+    color: beige;
 }
 
 .title {
+    color: beige;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+#blog {
+    padding: 5%;
+    color: black;
+    font-size: 2rem;
 }
 
 li {
@@ -25,19 +30,7 @@ li {
     padding-bottom: 1%;
 }
 
-section {
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-article#studycon, article#workcon {
-    background-color: rgb(0,0,0,0.5);
-}
-
-#study, #work {
-    padding-bottom: 2%;
-}
-
+/* <!-- Text HTML/CSS Component #5 (start)--> */
 .topnav {
     overflow: hidden;
     background-color: beige;
@@ -75,11 +68,6 @@ article#studycon, article#workcon {
 .topnav a:hover, .dropdown:hover .button {
     background-color: lightsalmon;
 }
-    /* @media screen and (min-width: 820px) {
-       .topnav a:hover, .dropdown:hover .button {
-    background-color: lightsalmon; 
-       }
-    } */
 
 .dropdown-content {
     display: none;
@@ -106,11 +94,6 @@ article#studycon, article#workcon {
 .dropdown-content a:hover {
     background-color: lightgreen;
 }
-    /* @media screen and (min-width: 820px) {
-        .dropdown-content a:hover {
-            background-color: lightgreen;
-        }
-    } */
 
 .dropdown:active .dropdown-content {
     display: block;
@@ -118,21 +101,11 @@ article#studycon, article#workcon {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-    /* @media screen and (min-width: 1080px) {
-        .dropdown:hover .dropdown-content {
-    display: block;
-        }
-    } */
+/* <!-- Text HTML/CSS Component #5 (end)--> */
 
 a:link {
     color: lightgreen;
     text-decoration: none;
-}
-
-li:hover {
-    font-size: 120%;
-    transition: 1s;
-    color: peru;
 }
 
 a:visited {
@@ -163,6 +136,7 @@ img#tim {
         }
     }
 
+/* <!-- Graphic HTML/CSS Component #2 (start)--> */
 #socials {
     width: 100%;
     padding: 10% 0% 5% 0%;
@@ -201,6 +175,7 @@ img#tim {
             transition: 1s;
         }
     }
+/* <!-- Graphic HTML/CSS Component #2 (end)--> */
 
 article {
     text-align: justify;
@@ -221,12 +196,15 @@ article {
 
 #follow {
     text-align: center;
+    padding-bottom: 5%;
 }
 
+/* <!-- Graphic HTML/CSS Component #1 (start)--> */
 #pages {
     width: 100%;
     padding: 0%;
-    padding-top: 2%;
+    margin-top: 0px;
+    padding-top: 0%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -236,11 +214,9 @@ article {
 }
 
 #pages a {
-    /* position: relative;
-    text-align: center; */
     width: 50%;
     height: 100%;
-    margin: 0%;
+    margin: 0;
     text-align: center;
 }
 
@@ -250,7 +226,6 @@ article {
     object-fit: cover;
     height: 40vw;
 }
-
     @media  screen and (min-width: 1280px) {
         #pages a {
             width: 25%;
@@ -260,14 +235,12 @@ article {
         }
     }
 
-a:hover {
+a:hover, a:active {
     opacity: 60%;
     transition: 0.7s;
 }
 
-a {
-    position: relative;
-}
+a {position: relative;}
 
 .pages {
     position: absolute;
@@ -275,11 +248,9 @@ a {
     right: 40%;
     color: white;
 }
+/* <!-- Graphic HTML/CSS Component #1 (end)--> */
 
-p#follow {
-    padding-bottom: 5%;
-}
-
+/* <!-- Text HTML/CSS Component #3 (start)--> */
 article#about1 {
     background-image: url(img/ollie.jpg);
     background-size: cover;
@@ -348,20 +319,13 @@ div#abt3 {
         background-color: rgb(0,0,0,0.3);
     }
 }
-
-img#murph {
-    position: relative;
-    width: 100%;
-}
-
-div#murph {
-    width: 100%
-}
+/* <!-- Text HTML/CSS Component #3 (end)--> */
 
 img#corey {
     width: 100%;
 }
 
+/* <!-- Text HTML/CSS Component #2 (start) --> */
 .collapsible {
   background-color: beige;
   color: #444;
@@ -374,7 +338,7 @@ img#corey {
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
+.active, .collapsible:hover, .collapsible:active {
   background-color: beige;
 }
 
@@ -427,23 +391,67 @@ img#blog {
             width: 80%;
         }
     }
+/* <!-- Text HTML/CSS Component #2 (end) --> */
 
+/* <!-- Text HTML/CSS Component #4 (start)--> */
+article#studycon, article#workcon {
+    background-color: rgb(0,0,0,0.5);
+}
+
+#study, #work {
+    padding: 1%;
+}
+
+li:hover, li:active {
+    font-size: 120%;
+    transition: 1s;
+    color: peru;
+}
+/* <!-- Text HTML/CSS Component #4 (end)--> */
+
+/* <!-- Graphic HTML/CSS Component #4 (start)--> */
 section#workstudy {
     width: 100%;
     display: block;
     background-image: url(img/history.jpg);
     background-size: cover;
+    background-position-x: 18%;
 }
+/* <!-- Graphic HTML/CSS Component #4 (end)--> */
 
+/* <!-- Text HTML/CSS Component #1 (start)--> */
 form#mess, p#alt {
     padding-top: 5%;
 }
+input {
+    background-color: beige;
+}
+input#submit {
+    border: 0;
+    padding: 1%;
+}
+/* <!-- Text HTML/CSS Component #1 (end)--> */
 
-div#thanks {
+section#thanks {
     text-align: center;
 }
 
 footer {
     text-align: center;
     padding-bottom: 2%;
+}
+
+/* <!-- Graphic HTML/CSS Component #3 (start)--> */
+img#cvp {
+    width: 30%;
+    padding: 2%;
+    margin: 2px solid beige;
+    display: inline-block;
+    position: relative;
+    left: 35%;
+}
+/* <!-- Graphic HTML/CSS Component #3 (end)--> */
+
+p#cv {
+    width: 100%;
 }
