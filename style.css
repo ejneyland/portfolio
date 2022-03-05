@@ -21,6 +21,21 @@ body {
 
 li {
     list-style-type: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+section {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+article#studycon, article#workcon {
+    background-color: rgb(0,0,0,0.5);
+}
+
+#study, #work {
+    padding-bottom: 2%;
 }
 
 .topnav {
@@ -56,11 +71,15 @@ li {
 .topnav a:active, .dropdown:active .button {
     background-color: lightsalmon;
 }
-    @media screen and (min-width: 1080px) {
+
+.topnav a:hover, .dropdown:hover .button {
+    background-color: lightsalmon;
+}
+    /* @media screen and (min-width: 820px) {
        .topnav a:hover, .dropdown:hover .button {
     background-color: lightsalmon; 
        }
-    }
+    } */
 
 .dropdown-content {
     display: none;
@@ -83,32 +102,41 @@ li {
 .dropdown-content a:active {
     background-color: lightgreen;
 }
-    @media screen and (min-width: 1080px) {
+
+.dropdown-content a:hover {
+    background-color: lightgreen;
+}
+    /* @media screen and (min-width: 820px) {
         .dropdown-content a:hover {
             background-color: lightgreen;
         }
-    }
+    } */
 
 .dropdown:active .dropdown-content {
     display: block;
 }
-    @media screen and (min-width: 1080px) {
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    /* @media screen and (min-width: 1080px) {
         .dropdown:hover .dropdown-content {
     display: block;
         }
-    }
+    } */
 
 a:link {
-    color: beige;
+    color: lightgreen;
     text-decoration: none;
 }
 
 li:hover {
-    font-size: 130%;
+    font-size: 120%;
+    transition: 1s;
+    color: peru;
 }
 
 a:visited {
-    color: peru;
+    color: rgb(0,128,128);
 }
 
 h2.title {
@@ -119,12 +147,6 @@ h2.title {
         font-size: 2rem;
         }
     }
-
-h2, h3 {
-    text-align: left;
-    padding-left: 0%;
-    width: 80%;
-}
 
 img#tim {
     display: block;
@@ -140,14 +162,6 @@ img#tim {
             padding-bottom: 1%;
         }
     }
-
-img#murph {
-    width: 100%;
-}
-
-img#corey {
-    width: 100%;
-}
 
 #socials {
     width: 100%;
@@ -178,9 +192,13 @@ img#corey {
             width: 50%;
         }
     }
-    @media  screen and (min-width: 1280px) {
+    @media  screen and (min-width: 1080px) {
         #socials a img {
             width: 30%;
+        }
+        a img.slink:hover {
+            transform: scale(1.3);
+            transition: 1s;
         }
     }
 
@@ -244,7 +262,7 @@ article {
 
 a:hover {
     opacity: 60%;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 a {
@@ -262,52 +280,86 @@ p#follow {
     padding-bottom: 5%;
 }
 
-div.abt1 {
-    position: relative;
+article#about1 {
+    background-image: url(img/ollie.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-div.murph {
-    position: absolute;
-    bottom: 0%;
-    right: 50%;
-    width: 50%;
-    padding: 2%;
-    background-color: black;
-    opacity: 50%;
+article#about2 {
+    background-image: url(img/cor.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vw;
 }
-    @media screen and (min-width: 650px) {
-        div.murph {
-            font-size: 1.5rem;
-            bottom: 50%;
-            right: 65%;
-            width: 35%;
-        }
+
+@media screen and (min-width: 800px) {
+    article#about1 {
+        height: 60vw;
+        align-items: flex-start;
+        padding: 0;
+        font-size: 1rem;
+    } 
+    
+    article#about2 {
+        height: 60vw;
+        align-items: flex-end;
+        padding: 0;
+        font-size: 1rem;
     }
-
-div.abt2 {
-    position: relative;
 }
 
-div.corey {
-    position: absolute;
-    height: 98%;
-    bottom: 0%;
-    right: 0%;
-    width: 50%;
+div#abt1, div#abt2 {
     padding: 2%;
-    background-color: black;
-    opacity: 50%;
+    width: 50%;
 }
-    @media screen and (min-width: 650px) {
-            div.corey {
-                font-size: 1.5rem;
-                width: 100%;
-                height: 27%;
-            }
-        }
 
-ul#study, #work {
-    padding: 5%;
+div#abt3 {
+    padding: 2%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.4);
+    position: relative;
+    top: 40%;
+}
+
+@media screen and (min-width: 450px) {
+    div#abt3 {
+        background: none;
+        position: inherit;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    div.abt {
+        opacity: 20%;
+        font-size: 1.5rem;
+    }
+    div.abt:hover {
+        opacity: 100%;
+        transition: 1s;
+    }
+    div#abt1:hover, div#abt2:hover {
+        background-color: rgb(0,0,0,0.3);
+    }
+}
+
+img#murph {
+    position: relative;
+    width: 100%;
+}
+
+div#murph {
+    width: 100%
+}
+
+img#corey {
+    width: 100%;
 }
 
 .collapsible {
@@ -327,14 +379,15 @@ ul#study, #work {
 }
 
 .content {
-  padding: 5%;
-  display: none;
-  overflow: hidden;
-  background-color: beige;
+    color: black;
+    padding: 5%;
+    display: none;
+    overflow: hidden;
+    background-color: beige;
 }
 
-div.content {
-    color: black;
+.blogs .content {
+    display: none;
 }
 
 .collapsible:after {
@@ -346,11 +399,51 @@ div.content {
   content: "\2796";
 }
 
+section.blogs {
+    background-color: beige;
+}
+
+div.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    color: black;
+}
+
 img#blog {
     width: 100%;
+    padding-top: 2%;
+    position: relative;
 }
+
+ @media screen and (min-width: 1080px) {
+     div.content {
+         width: 80%;
+        }
+        img#blog {
+            width: 80%;
+        }
+    }
 
 section#workstudy {
     width: 100%;
     display: block;
+    background-image: url(img/history.jpg);
+    background-size: cover;
+}
+
+form#mess, p#alt {
+    padding-top: 5%;
+}
+
+div#thanks {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 2%;
 }

@@ -27,18 +27,28 @@
     </header>
     
     <h2 class="title">Ethan Neyland | Personal Profile</h2>
-    <img id="tim" src="img/tim.jpeg" />
+        <img id="tim" src="img/tim.jpeg" />
     
-     <article>
+    <article>
         <h3>Welcome</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, est eveniet! Quam corporis facilis voluptates vero, quae id repellendus dicta cumque amet voluptas nisi praesentium similique enim placeat, accusantium dolorum.
-        </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, est eveniet! Quam corporis facilis voluptates vero, quae id repellendus dicta cumque amet voluptas nisi praesentium similique enim placeat, accusantium dolorum.
+            </p>
     </article>
     <article>
         <h3>Contact</h3>
-        <p>Phone:  +61 419 XXX XXX</p>
-        <p>Email:  ethanjneyland@loremipsum.com</p> 
+            <p>Phone:  +61 419 XXX XXX</p>
+            <p>Email:  ethanjneyland@loremipsum.com</p>
+            <p id="alt">Alternatively, you can send me a message below:</p>
+            <form id="mess" action="/thanks.html" target="home.html">
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                <label for="contact">Contact:</label>
+                    <input type="text" id="contact" name="contact"><br><br>
+                <label for="fname">Message:</label>
+                    <input type="text" id="message" name="message"><br><br>
+                    <input type="submit" value="Submit">
+            </form>
     </article>
 
     <section id="pages">
@@ -62,20 +72,25 @@
     
     <section id="socials">
             <a href="https://github.com/ejneyland" target="_blank">
-                <img id="git" src="img/git.png" />
+                <img class="slink" id="git" src="img/git.png" />
             </a>
             <a href="https://www.linkedin.com/in/ethan-neyland-28038a1a4/" target="_blank">
-                <img id="linked" src="img/linked.png" />
+                <img class="slink" id="linked" src="img/linked.png" />
             </a>
             <a href="https://www.instagram.com/ejneyland/" target="_blank">
-                <img id="insta" src="img/insta.png" />
+                <img class="slink" id="insta" src="img/insta.png" />
             </a>
             <a href="https://twitter.com/ejneyland" target="_blank">
-                <img id="twit" src="img/twit.png" />
+                <img class="slink" id="twit" src="img/twit.png" />
             </a>
     </section>
     
     <p id="follow">You can find my profile on any of the above platforms by selecting the respective icon</p>
+
+<footer>
+    <p>&copy; Ethan Neyland 2022</p>
+</footer>
+
 
 </body>
 </html>
