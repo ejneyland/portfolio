@@ -104,12 +104,12 @@ li {
 /* <!-- Text HTML/CSS Component #5 (end)--> */
 
 a:link {
-    color: lightgreen;
+    color: rgb(0,128,128);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(0,128,128);
+    color: #800020;
 }
 
 h2.title {
@@ -403,7 +403,7 @@ article#studycon, article#workcon {
 }
 
 li:hover, li:active {
-    font-size: 120%;
+    font-size: 130%;
     transition: 1s;
     color: peru;
 }
